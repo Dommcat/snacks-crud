@@ -1,0 +1,26 @@
+{% extends 'snack_base.html' %}
+
+{% block content %}
+    <h1>Snacks</h1>
+    <ul>
+        {% for snack in snack_crud_project %}
+            <li><a href="{% url 'snack_detail' pk=snack.pk %}">{{ snack.name }}, {{ snacks.description }}</a></li>
+        {% empty %}
+            <li>No snacks yet.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
+
+<!-- # Below from snacks-models  -->
+
+<!-- {% extends 'base.html' %}
+
+{%  block content %}
+
+  {% for snacks in snacks_tracking_project %}
+  <h2><a href="{% url 'snacks_detail' snacks.pk %}">{{ snacks.name }} , {{ snacks.description }}</a></h2>
+{% endfor %}
+
+{%  endblock content %} -->

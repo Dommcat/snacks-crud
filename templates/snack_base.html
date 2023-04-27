@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snacks Application</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'snack_list' %}">List Snack</a> |
+        <a href="{% url 'snack_create' %}">Create Snack</a>
+        <a href="{% url 'snack_delete' %}">Delete Snack</a> |
+        <a href="{% url 'snack_detail' %}">Detail Snack</a>
+        <a href="{% url 'snack_update' %}">Update Snack</a>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
+
+
+
