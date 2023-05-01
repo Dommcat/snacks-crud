@@ -26,7 +26,7 @@ i.e. -->
 ## Initialization/Installs: 
 - View requirements.txt for installations and Key
 
-
+SECRET_KEY=django-insecure-(!icohr(yxjj$h1jo5wajfkq_+!#gs!d9mjrv#81$jl+yoe8sd
 
 ## In progress CheckList: 
 

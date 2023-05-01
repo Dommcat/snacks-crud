@@ -37,7 +37,7 @@ DEBUG = env.bool('DEBUG')
 print('debug is', DEBUG)
 
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
